@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ page.title }}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="JNXYDLJS Company"/>
+    <meta name="keywords" content="JNXYDLJS,Jinan"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" />
+	<link rel="stylesheet" href="/css/core.css" media="screen" />
+	<link rel="stylesheet" href="/css/syntax.css">
+	<link rel="shortcut icon" href="/img/favicon.ico" />
+	<style type="text/css">
+	body {
+		padding-top: 60px;
+		padding-bottom: 40px;
+	}
+	</style>
+	<script src="/js/jquery.js"></script>
+	<script src="/js/bootstrap.min.js"></script>
+</head>
+<body>
+	{% include nav.html %}
+	<div id="container" class="container">
+		{{ content }}
+	</div>
+	{% include footer.html %}
+</body>
+</html>
