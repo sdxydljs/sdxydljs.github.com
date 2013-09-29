@@ -1,0 +1,28 @@
+---
+layout: default
+title: 新闻动态
+current_news: active
+---
+
+<div class="row">
+	<div class="span3 bs-docs-sidebar">
+		<ul class="nav nav-list bs-docs-sidenav affix">
+			{% for post in site.posts limit:5 %}
+				<li><a href="#{{ post.title }}"><i class="icon-chevron-right"></i> {{ post.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+	<div class="span9">
+		{% for post in site.posts limit:5 %}
+			<section id="{{ post.title }}">
+				<div class="page-header">
+					<h3>{{ post.title }}</h3>
+				</div>
+				<div>
+					{{ post.content | strip_html | truncate:500  }}
+				</div>
+				<a href="http://www.xydljs.com{{ post.url }}">Read More...</a>
+			</section>
+		{% endfor %}
+	</div>
+</div>
