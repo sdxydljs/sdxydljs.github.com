@@ -4,6 +4,72 @@ title: 首页
 current_home: active
 ---
 
-<div id="home">
-	<h1>This is the home page</h1>
+<div class="banner">
+	<ul>
+		<li style="background-image: url('/img/index/demo-01.jpg');">
+			<div class="inner">
+				<h1>Demo 01.</h1>
+				<p>This is demo 01.</p>
+			</div>
+		</li>
+		<li style="background-image: url('/img/index/demo-02.jpg');">
+			<div class="inner">
+				<h1>Demo 02.</h1>
+				<p>This is demo 02.</p>
+			</div>
+		</li>
+		<li style="background-image: url('/img/index/demo-03.jpg');">
+			<div class="inner">
+				<h1>Demo 03.</h1>
+				<p>This is demo 03.</p>
+			</div>
+		</li>
+	</ul>
 </div>
+
+<div class="row">
+	<div class="span4">
+		<h2>关于我们</h2>
+		<p>山东兴源电力技术有限公司。XXXXXXXXXXXXXXXXXXXXXXX, XXXXXXXXXXXXXXXXXXXXXXXXXX, XXXXXXXXXXXXXXXXXXXXXXX, XXXXXXXXXXXXX, XXXXXXXXXXXXXXXXXX, XXXXXXXXXXXXXXXXXXXXXXXXXXXX  ......</p>
+	</div>
+	<div class="span4">
+		<h2>业务范围</h2>
+		<p>XXXXXXXXXXXXXXXXXXXXXXXXXX, XXXXXXXXXXXXXXXXXX, XXXXXXXXXXXXXXXXXXXXXX, XXXXXXXXXXXXXXXXXX, XXXXXXXXXXXXXXXXXXXX, XXXXXXXXXXXXXXX ......</p>
+	</div>
+	<div class="span4">
+		<h2>联系方式</h2>
+		<p>地址: 山东省济南市XXXXXXXX<br/>
+			电话: 0531-XXXXXXXX<br/>
+			传真: 0531-XXXXXXXX<br/>
+			邮编: XXXXXX<br/>
+			24小时服务热线: XXXXXXXXXX<br/>
+			邮箱: <a href="mailto:xxxxxx@163.com">xxxxxx@163.com</a></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="span4">
+			<p><a class="btn" href="/about">详细内容 &raquo;</a></p>
+		</div>
+		<div class="span4">
+			<p><a class="btn" href="/business">详细内容 &raquo;</a></p>
+		</div>
+		<div class="span4">
+			<p><a class="btn" href="/contact">详细内容 &raquo;</a></p>
+		</div>
+	</div>
+
+	<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		$(function() {
+			// run slider
+			$('.banner').unslider({
+				speed: 500,               //  The speed to animate each slide (in milliseconds)
+				delay: 3000,              //  The delay between slide animations (in milliseconds)
+				complete: function() {},  //  A function that gets called after every slide animation
+				keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+				dots: true,               //  Display dot navigation
+				fluid: false              //  Support responsive design. May break non-responsive designs
+			});
+		});
+	});
+	</script>
