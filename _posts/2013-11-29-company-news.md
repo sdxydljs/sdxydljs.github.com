@@ -2,6 +2,7 @@
 layout: post
 title: 公司新闻 [2013.11.29]
 author: 系统管理员
+current_news: active
 syntax: true
 ---
 
