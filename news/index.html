@@ -16,12 +16,12 @@ current_news: active
 		{% for post in site.posts limit:5 %}
 			<section id="{{ post.title }}">
 				<div class="page-header">
-					<h3>{{ post.title }}</h3>
+					<h3><a href="{{ site.base-url }}{{ post.url }}">{{ post.title }}</a></h3>
 				</div>
 				<div>
 					{{ post.content | strip_html | truncate:500  }}
 				</div>
-				<a href="{{ site.base-url }}{{ post.url }}">Read More...</a>
+				<a href="{{ site.base-url }}{{ post.url }}">详细内容...</a>
 			</section>
 		{% endfor %}
 	</div>

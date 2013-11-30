@@ -5,5 +5,18 @@ layout: default
 <div class="span1">
 </div>
 <div class="span11">
+	<section>
+		<div class="page-header">
+			<div class="return-back"> <a href="/">首页</a> <strong>></strong> <a href="/news">新闻动态</a> <strong>></strong> {{ page.title }}</div>
+			<h1>{{ page.title }}</h1>
+		</div>
+	</section>
+	<div>
+		<span><strong>发布时间: </strong>{{ page.date | date: "%Y年%m月%d日" }}</span>
+		<br/>
+		<span><strong>发布者: </strong>{% if page.author != null %} {{ page.author | capitalize }} {% else %} 匿名用户 {% endif %}</span>
+	</div>
+	<br/>
 	{{ content }}
 </div>
+
