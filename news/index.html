@@ -21,7 +21,7 @@ current_news: active
 				<div>
 					{{ post.content | strip_html | truncate:500  }}
 				</div>
-				<a href="http://www.xydljs.com{{ post.url }}">Read More...</a>
+				<a href="{{ site.base-url }}{{ post.url }}">Read More...</a>
 			</section>
 		{% endfor %}
 	</div>
