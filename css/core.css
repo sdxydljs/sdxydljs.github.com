@@ -226,3 +226,14 @@ section > .page-header .return-back {
 	float: right;
 	padding-top: 40px;
 }
+
+/* Overwrite Bootstrap CSS
+-------------------------------------------------- */
+.brand {
+  background: url(/img/logo.png) no-repeat left center;
+  height: 20px;
+}
+
+.navbar .brand {
+	padding-left: 40px;
+}
