@@ -237,3 +237,33 @@ section > .page-header .return-back {
 .navbar .brand {
 	padding-left: 40px;
 }
+
+/* Home Page Features CSS
+-------------------------------------------------- */
+div.features {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+div.features .feature img {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+div.features .feature i {
+	color: #267494;
+	font-size: 54px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+div.features .feature h4 {
+	text-align: center;
+}
+
+div.features .feature p.more {
+	text-align: right;
+}
